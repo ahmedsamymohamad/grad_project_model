@@ -21,12 +21,12 @@ DEFAULT_MODEL_PATH = ROOT_DIR / "branch_1_best_model.joblib"
 MODEL_PATH = Path(os.getenv("MODEL_PATH", str(DEFAULT_MODEL_PATH)))
 
 MODEL_PATHS = {
-    "branch_1": Path(os.getenv("MODEL_BRANCH_1_PATH", str(MODEL_DIR / "branch_1_best_model.joblib"))),
-    "branch_2": Path(os.getenv("MODEL_BRANCH_2_PATH", str(MODEL_DIR / "branch_2_model.joblib"))),
-    "branch_3": Path(os.getenv("MODEL_BRANCH_3_PATH", str(MODEL_DIR / "branch_3_model.joblib"))),
-    "branch_1_printer": Path(os.getenv("MODEL_BRANCH_1_PRINTER_PATH", str(MODEL_DIR / "branch_1_printer_model.joblib"))),
-    "branch_2_printer": Path(os.getenv("MODEL_BRANCH_2_PRINTER_PATH", str(MODEL_DIR / "branch_2_printer_model.joblib"))),
-    "branch_3_printer": Path(os.getenv("MODEL_BRANCH_3_PRINTER_PATH", str(MODEL_DIR / "branch_3_printer_model.joblib"))),
+    "branch_1": Path(os.getenv("MODEL_BRANCH_1_PATH", str(ROOT_DIR / "branch_1_best_model.joblib"))),
+    "branch_2": Path(os.getenv("MODEL_BRANCH_2_PATH", str(ROOT_DIR / "branch_2_model.joblib"))),
+    "branch_3": Path(os.getenv("MODEL_BRANCH_3_PATH", str(ROOT_DIR / "branch_3_model.joblib"))),
+    "branch_1_printer": Path(os.getenv("MODEL_BRANCH_1_PRINTER_PATH", str(ROOT_DIR / "branch_1_printer_model.joblib"))),
+    "branch_2_printer": Path(os.getenv("MODEL_BRANCH_2_PRINTER_PATH", str(ROOT_DIR / "branch_2_printer_model.joblib"))),
+    "branch_3_printer": Path(os.getenv("MODEL_BRANCH_3_PRINTER_PATH", str(ROOT_DIR / "branch_3_printer_model.joblib"))),
 }
 
 DEVICE_TYPE_MODEL_KEY_MAP = {
