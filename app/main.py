@@ -15,9 +15,9 @@ try:
 except Exception:  # pragma: no cover
     column_transformer_module = None
 
-ROOT_DIR = Path(__file__).resolve().parents[2]
-MODEL_DIR = ROOT_DIR / "model_api"
-DEFAULT_MODEL_PATH = MODEL_DIR / "branch_1_best_model.joblib"
+ROOT_DIR = Path(__file__).resolve().parents[1]
+
+DEFAULT_MODEL_PATH = ROOT_DIR / "branch_1_best_model.joblib"
 MODEL_PATH = Path(os.getenv("MODEL_PATH", str(DEFAULT_MODEL_PATH)))
 
 MODEL_PATHS = {
