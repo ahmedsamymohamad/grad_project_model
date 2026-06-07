@@ -15,6 +15,7 @@ try:
 except Exception:  # pragma: no cover
     column_transformer_module = None
 
+print(sklearn.__version__)
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
 DEFAULT_MODEL_PATH = ROOT_DIR / "branch_1_best_model.joblib"
